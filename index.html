@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lyrics Finder Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="header__logo--left">
+        <figure class="logo__img--wrapper">
+          <img
+            class="logo__img"
+            src="./assets/Lyricist Logo.png"
+            alt="Lyricist Logo"
+          />
+        </figure>
+      </div>
+      <div class="header__logo--right">
+        <figure class="logo__img--wrapper">
+          <img
+            class="logo__img"
+            src="./assets/Lyricist Logo.png"
+            alt="Lyricist Logo"
+          />
+        </figure>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="header">
+            <div class="header__description">
+              Find the lyrics to your favorite songs!
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="lyric__search">
+      <div class="container">
+        <div class="row">
+          <div class="search__field">
+            <input
+              type="text"
+              placeholder="Artist - Song Name"
+              id="search__area"
+            />
+          </div>
+          <div class="search__button">
+            <button id="search__btn" onclick="toggleLyricArea()">Search</button>
+          </div>
+          <div class="return__area">
+            <div class="lyrics__return">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>

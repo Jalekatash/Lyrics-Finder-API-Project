@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: relative;
+    background-color: #90AFC5;
+    border-bottom: 3px solid #2A3132;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.45);
+    height: 140px;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer {
+    background-color: #90AFC5;
+}
+
+.container {
+    padding: 0 24px;
+}
+
+.row {
+    width: 100%;
+}
+
+.header__logo--left {
+    position: absolute;
+    margin-left: 40px;
+    animation: cross-spin-left 4000ms ease;
+}
+
+.header__logo--right {
+    position: absolute;
+    margin-right: 40px;
+    animation: cross-spin-right 4000ms ease;
+    transform: translateX(90vw);
+}
+
+.logo__img--wrapper {
+    width: 120px;
+}
+
+.logo__img {
+    width: 100%;
+    
+}
+
+.header {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__description {
+   font-family: "Kaushan Script", sans-serif;
+   font-size: 40px;
+   font-variant: small-caps;
+   word-spacing: 10px;
+   visibility: none;
+   text-shadow: 1px 2px 6px;
+}
+
+/* LYRIC SEARCH  */
+
+#lyric__search {
+    background: linear-gradient(#90AFC5,#336B87);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 30;
+}
+
+.search__field {
+    padding: 100px 0px 48px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#search__area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 50px;
+    width: 100%;
+    max-width: 448px;
+    text-align: center;
+    background: #2A3132;
+    border-radius: 10px;
+    box-shadow: 3px 6px 8px;
+}
+
+.search__button {
+    display: flex;
+    justify-content: center;
+}
+
+#search__btn {
+    padding: 24px 48px;
+    font-size: 24px;
+    background-color: #2A3132;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 4px 8px black;
+}
+
+.return__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 120px;
+}
+
+
+.lyrics {
+    border: none;
+}
+
+.lyrics--visible {
+    border: 3px solid #90AFC5;
+    border-radius: 5px;
+    padding: 50px;
+    font-size: 32px;
+    font-family: "Monstserrat", sans-serif;
+    color: #242424;
+}
+
+@keyframes cross-spin-left{
+        0% {
+            transform: translateX(50vw)rotate(0); /* Move to off-screen right */
+        }
+        100% {
+            transform: translateX(0%)rotate(360deg); /* Return to starting position off-screen left */
+        }
+}
+
+@keyframes cross-spin-right{
+    0% {
+        transform: translateX(50vw)rotate(0);
+    }
+    100% {
+        transform: translateX(90vw)rotate(-360deg); 
+    }
+}

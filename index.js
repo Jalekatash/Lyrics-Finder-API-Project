@@ -16,6 +16,10 @@ async function main(artist,title) {
   }
 }
 
+setTimeout(function() {
+  document.querySelector('.delayed__element').style.opacity = '1';
+}, 1000);
+
 let lyricArea = false;
 function toggleLyricArea() {
   if (lyricArea) {
